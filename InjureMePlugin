@@ -1,0 +1,9 @@
+function OnPlayerChat(args)
+	if args.text == "Injure me" then
+		args.player:SetHealth(0,5)
+	end
+ 
+	return true
+end
+ 
+Events:Subscribe("PlayerChat", OnPlayerChat)
